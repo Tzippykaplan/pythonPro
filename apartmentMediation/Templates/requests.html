@@ -1,0 +1,7 @@
+{% extends 'layout.html' %}
+{% block information %}
+    <h4>Requests</h4>
+    {% for request in requests %}
+    <h4>{{request.buyer}}</h4><h4>{{request.apartment}}</h4>
+    {%endfor%}
+{% endblock %}
